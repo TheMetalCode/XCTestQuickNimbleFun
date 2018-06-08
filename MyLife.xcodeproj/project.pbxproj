@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		659BD67D1C58E8A934E49F65 /* Pods_MyLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688457313041AD6FCB355574 /* Pods_MyLifeUITests.framework */; };
 		8EF496A9A2B8F884707B1813 /* Pods_MyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676B06A35FF6349662DAD1E /* Pods_MyLife.framework */; };
-		F2E2B7F320C9FA9E008784C4 /* TestBed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2B7F220C9FA9E008784C4 /* TestBed.swift */; };
+		F200944E20CA05E700F9A6AB /* PersonListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200944D20CA05E700F9A6AB /* PersonListScreen.swift */; };
+		F200945020CA05F600F9A6AB /* PersonDetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200944F20CA05F600F9A6AB /* PersonDetailScreen.swift */; };
+		F200945220CAF5E800F9A6AB /* TopNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F200945120CAF5E800F9A6AB /* TopNavBar.swift */; };
 		F2E2BC6620C9F6AD000D5C29 /* MyLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2BC6520C9F6AD000D5C29 /* MyLifeUITests.swift */; };
 		FA13E2D81CBEBB4F00CB0073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13E2D71CBEBB4F00CB0073 /* AppDelegate.swift */; };
 		FA13E2DD1CBEBB4F00CB0073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13E2DB1CBEBB4F00CB0073 /* Main.storyboard */; };
@@ -38,7 +40,9 @@
 		A338374DB3E4C3EB6FC5F6EF /* Pods-MyLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyLifeUITests/Pods-MyLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B676B06A35FF6349662DAD1E /* Pods_MyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C66EDEAB43726D8A4E880C66 /* Pods-MyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyLife/Pods-MyLife.debug.xcconfig"; sourceTree = "<group>"; };
-		F2E2B7F220C9FA9E008784C4 /* TestBed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBed.swift; sourceTree = "<group>"; };
+		F200944D20CA05E700F9A6AB /* PersonListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonListScreen.swift; sourceTree = "<group>"; };
+		F200944F20CA05F600F9A6AB /* PersonDetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailScreen.swift; sourceTree = "<group>"; };
+		F200945120CAF5E800F9A6AB /* TopNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavBar.swift; sourceTree = "<group>"; };
 		F2E2BC6320C9F6AD000D5C29 /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E2BC6520C9F6AD000D5C29 /* MyLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLifeUITests.swift; sourceTree = "<group>"; };
 		F2E2BC6720C9F6AD000D5C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,12 +98,22 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		F200944C20CA05CA00F9A6AB /* ScreenObjects */ = {
+			isa = PBXGroup;
+			children = (
+				F200944D20CA05E700F9A6AB /* PersonListScreen.swift */,
+				F200944F20CA05F600F9A6AB /* PersonDetailScreen.swift */,
+				F200945120CAF5E800F9A6AB /* TopNavBar.swift */,
+			);
+			path = ScreenObjects;
+			sourceTree = "<group>";
+		};
 		F2E2BC6420C9F6AD000D5C29 /* MyLifeUITests */ = {
 			isa = PBXGroup;
 			children = (
+				F200944C20CA05CA00F9A6AB /* ScreenObjects */,
 				F2E2BC6520C9F6AD000D5C29 /* MyLifeUITests.swift */,
 				F2E2BC6720C9F6AD000D5C29 /* Info.plist */,
-				F2E2B7F220C9FA9E008784C4 /* TestBed.swift */,
 			);
 			path = MyLifeUITests;
 			sourceTree = "<group>";
@@ -316,8 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F200945220CAF5E800F9A6AB /* TopNavBar.swift in Sources */,
+				F200944E20CA05E700F9A6AB /* PersonListScreen.swift in Sources */,
+				F200945020CA05F600F9A6AB /* PersonDetailScreen.swift in Sources */,
 				F2E2BC6620C9F6AD000D5C29 /* MyLifeUITests.swift in Sources */,
-				F2E2B7F320C9FA9E008784C4 /* TestBed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

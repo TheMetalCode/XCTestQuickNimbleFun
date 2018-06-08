@@ -12,20 +12,38 @@ import Nimble
 
 class MyLifeUITests: QuickSpec {
     
+    var app : XCUIApplication!
+    var personList : PersonListScreen!
+    var personDetail : PersonDetailScreen!
+    
     override func spec() {
         
         beforeSuite {
-            XCUIApplication().launch()
+            self.app = XCUIApplication()
+            self.app.launch()
+            self.personList = PersonListScreen(testApp: self.app)
+            self.personDetail = PersonDetailScreen(testApp: self.app)
         }
         
         describe("MyLife") {
             it("accesses cell detail") {
-                let app = XCUIApplication()
-                let firstCell = app.tables.cells["person-cell-0"]
-                let cellName = firstCell.label
-                firstCell.tap()
-                let personDetailName = app.textFields["person-name"].label
-                expect(personDetailName).to(equal(cellName))
+                let cellName = self.personList.getPersonCellName(index: 0)
+                self.personList.tapPersonCell(index: 0)
+                expect(self.personDetail.personName.label).to(equal(cellName))
+            }
+            
+            it("changes person name") {
+                self.personList.tapPersonCell(index: 0)
+                self.personDetail.appendPersonName(newName: "Kevin Durant")
+                self.personDetail.navBar.done.tap()
+                expect(self.personList.getPersonCellName(index: 0)).to(contain("Kevin Durant"))
+            }
+            
+            it("adds a person") {
+                self.personList.navBar.add.tap()
+                self.personDetail.appendPersonName(newName: "Steph Curry")
+                self.personDetail.navBar.done.tap()
+                expect(self.personList.getPersonCellName(index: 3)).to(contain("Steph Curry"))
             }
         }
     }
