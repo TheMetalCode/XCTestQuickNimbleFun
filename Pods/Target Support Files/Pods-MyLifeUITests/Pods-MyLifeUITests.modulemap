@@ -1,0 +1,6 @@
+framework module Pods_MyLifeUITests {
+  umbrella header "Pods-MyLifeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

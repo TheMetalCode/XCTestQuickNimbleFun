@@ -69,6 +69,7 @@ class PeopleTableViewController: UITableViewController {
         // Set the text and image in the cell.
         cell.textLabel!.text = person.name
         cell.imageView!.image = person.image
+        cell.accessibilityIdentifier = "person-cell-\(indexPath.row)"
         
         // Now the cell has been setup, return it to the table view.
         return cell

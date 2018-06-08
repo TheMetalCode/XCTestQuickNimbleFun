@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		659BD67D1C58E8A934E49F65 /* Pods_MyLifeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 688457313041AD6FCB355574 /* Pods_MyLifeUITests.framework */; };
+		8EF496A9A2B8F884707B1813 /* Pods_MyLife.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B676B06A35FF6349662DAD1E /* Pods_MyLife.framework */; };
+		F2E2B7F320C9FA9E008784C4 /* TestBed.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2B7F220C9FA9E008784C4 /* TestBed.swift */; };
 		F2E2BC6620C9F6AD000D5C29 /* MyLifeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E2BC6520C9F6AD000D5C29 /* MyLifeUITests.swift */; };
 		FA13E2D81CBEBB4F00CB0073 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA13E2D71CBEBB4F00CB0073 /* AppDelegate.swift */; };
 		FA13E2DD1CBEBB4F00CB0073 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA13E2DB1CBEBB4F00CB0073 /* Main.storyboard */; };
@@ -29,6 +32,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1DFEBBEBEC80C6B203A450CB /* Pods-MyLife.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLife.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyLife/Pods-MyLife.release.xcconfig"; sourceTree = "<group>"; };
+		688457313041AD6FCB355574 /* Pods_MyLifeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLifeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83C50AB25FF690B8231E4CFF /* Pods-MyLifeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLifeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MyLifeUITests/Pods-MyLifeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A338374DB3E4C3EB6FC5F6EF /* Pods-MyLifeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLifeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyLifeUITests/Pods-MyLifeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B676B06A35FF6349662DAD1E /* Pods_MyLife.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyLife.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C66EDEAB43726D8A4E880C66 /* Pods-MyLife.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyLife.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MyLife/Pods-MyLife.debug.xcconfig"; sourceTree = "<group>"; };
+		F2E2B7F220C9FA9E008784C4 /* TestBed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBed.swift; sourceTree = "<group>"; };
 		F2E2BC6320C9F6AD000D5C29 /* MyLifeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyLifeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2E2BC6520C9F6AD000D5C29 /* MyLifeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLifeUITests.swift; sourceTree = "<group>"; };
 		F2E2BC6720C9F6AD000D5C29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659BD67D1C58E8A934E49F65 /* Pods_MyLifeUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,17 +67,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EF496A9A2B8F884707B1813 /* Pods_MyLife.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		81F748B226B8E4138818A3E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C66EDEAB43726D8A4E880C66 /* Pods-MyLife.debug.xcconfig */,
+				1DFEBBEBEC80C6B203A450CB /* Pods-MyLife.release.xcconfig */,
+				A338374DB3E4C3EB6FC5F6EF /* Pods-MyLifeUITests.debug.xcconfig */,
+				83C50AB25FF690B8231E4CFF /* Pods-MyLifeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		840CBDF12421FD7C3F18F4E3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B676B06A35FF6349662DAD1E /* Pods_MyLife.framework */,
+				688457313041AD6FCB355574 /* Pods_MyLifeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2E2BC6420C9F6AD000D5C29 /* MyLifeUITests */ = {
 			isa = PBXGroup;
 			children = (
 				F2E2BC6520C9F6AD000D5C29 /* MyLifeUITests.swift */,
 				F2E2BC6720C9F6AD000D5C29 /* Info.plist */,
+				F2E2B7F220C9FA9E008784C4 /* TestBed.swift */,
 			);
 			path = MyLifeUITests;
 			sourceTree = "<group>";
@@ -78,6 +111,8 @@
 				FA13E2D61CBEBB4F00CB0073 /* MyLife */,
 				F2E2BC6420C9F6AD000D5C29 /* MyLifeUITests */,
 				FA13E2D51CBEBB4F00CB0073 /* Products */,
+				81F748B226B8E4138818A3E8 /* Pods */,
+				840CBDF12421FD7C3F18F4E3 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -120,9 +155,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2E2BC6C20C9F6AD000D5C29 /* Build configuration list for PBXNativeTarget "MyLifeUITests" */;
 			buildPhases = (
+				E9DDA1206B6F73A694B3D632 /* [CP] Check Pods Manifest.lock */,
 				F2E2BC5F20C9F6AD000D5C29 /* Sources */,
 				F2E2BC6020C9F6AD000D5C29 /* Frameworks */,
 				F2E2BC6120C9F6AD000D5C29 /* Resources */,
+				158B8BDA47D4447231A2EAE1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -138,6 +175,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA13E2E61CBEBB4F00CB0073 /* Build configuration list for PBXNativeTarget "MyLife" */;
 			buildPhases = (
+				E5B92DE589C2F0D2D6A70AE0 /* [CP] Check Pods Manifest.lock */,
 				FA13E2D01CBEBB4F00CB0073 /* Sources */,
 				FA13E2D11CBEBB4F00CB0073 /* Frameworks */,
 				FA13E2D21CBEBB4F00CB0073 /* Resources */,
@@ -214,12 +252,72 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		158B8BDA47D4447231A2EAE1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MyLifeUITests/Pods-MyLifeUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MyLifeUITests/Pods-MyLifeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5B92DE589C2F0D2D6A70AE0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyLife-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E9DDA1206B6F73A694B3D632 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MyLifeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F2E2BC5F20C9F6AD000D5C29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F2E2BC6620C9F6AD000D5C29 /* MyLifeUITests.swift in Sources */,
+				F2E2B7F320C9FA9E008784C4 /* TestBed.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +364,7 @@
 /* Begin XCBuildConfiguration section */
 		F2E2BC6A20C9F6AD000D5C29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A338374DB3E4C3EB6FC5F6EF /* Pods-MyLifeUITests.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -299,6 +398,7 @@
 		};
 		F2E2BC6B20C9F6AD000D5C29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83C50AB25FF690B8231E4CFF /* Pods-MyLifeUITests.release.xcconfig */;
 			buildSettings = {
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -415,6 +515,7 @@
 		};
 		FA13E2E71CBEBB4F00CB0073 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C66EDEAB43726D8A4E880C66 /* Pods-MyLife.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -432,6 +533,7 @@
 		};
 		FA13E2E81CBEBB4F00CB0073 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DFEBBEBEC80C6B203A450CB /* Pods-MyLife.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
